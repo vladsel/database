@@ -1,9 +1,11 @@
-Лабораторна робота №2. Створення додатку бази даних, орієнтованого на взаємодію з СУБД PostgreSQL. Опис структури БД.
+The purpose of the work is to acquire the skills of programming applications of PostgreSQL databases.
 
-У Обраній базі даних «Готель» можна виділити наступні таблиці: загальні відомості про готель (hotel), тип заданого номера (room), категорія номера (category), загальні відомості про постояльця (guest), інформація про покоївку (chambermaid), відношення покоївок до кімнат (room/chambermaid),  відношення постояльців до кімнат (room/guest).
-Стовпці заданих таблиць:
-1.	hotel: hotel_id, name, restaurant, city, stars.
-2.	room: room_id, arrival date, departure date, category_id, hotel_id, number.
-3.	category: category_id, room type, allocation type, eating type, price.
-4.	guest: guest_id, name, surname, patronymic, birthday, hotel_id.
-5.	chambermaid: chambermaid_id, name, phone number, salary, hotel_id.
+The general task of the work is as follows:
+
+1. Implement the functions of viewing, entering, editing and extracting data in the database tables created in laboratory work No. 1, using the console interface.
+
+2. Provide for automatic batch generation of "randomized" data in the database.
+
+3. To ensure the implementation of a search by several attributes from two or more entities at the same time: for numeric attributes – within a range, for string attributes – as a template of the LIKE function of the SELECT SQL statement, for a logical type – True/False values, for dates – within a range date
+
+4. Execute the program code according to the MVC template (model-presentation-controller).
